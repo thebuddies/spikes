@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using MongoDb.DataAccess;
 using MongoDb.Model;
 using MongoDB.Bson;
@@ -15,6 +16,8 @@ namespace MongoDb.App
             _ctx = new MongoDbContext();
 
             InsertUsers(20);
+
+            Thread.Sleep(2000);
 
             Console.WriteLine(GetCount());
         }
@@ -37,6 +40,7 @@ namespace MongoDb.App
             }
 
             _ctx.Users.InsertManyAsync(users);
+            Console.WriteLine("Inserting...");
         }
 
         public static long GetCount()

@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace MongoDb.Model
 {
-    public class User
+    public class User : IUser<ObjectId>
     {
         public User()
         {
