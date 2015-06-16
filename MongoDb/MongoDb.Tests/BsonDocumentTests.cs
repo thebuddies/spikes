@@ -1,4 +1,5 @@
 ﻿using System;
+using MongoDb.Model;
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
 using NUnit.Framework;
@@ -6,7 +7,7 @@ using NUnit.Framework;
 namespace MongoDb.Tests
 {
     [TestFixture]
-    public class BsonDocumentTests
+    public class BsonDocumentTests : AssertionHelper
     {
         public BsonDocumentTests()
         {
@@ -33,6 +34,33 @@ namespace MongoDb.Tests
             user.Add("firstName", new BsonString("Ivan"));
 
             Console.WriteLine(user);
+        }
+
+        [Test]
+        public void Automatic()
+        {
+            var user = new User
+            {
+                FirstName = "Peter",
+                LastName = "Petrov",
+                Username = "pesho",
+                Age = 33
+            };
+            user.Address.Add("My home address");
+            user.Address.Add("My work address");
+
+            Console.WriteLine(user.ToJson());
+        }
+
+        [Test]
+        public void TestObjectId()
+        {
+            var car = new Car
+            {
+                Make = "BMW"
+            };
+
+            Console.WriteLine(car.ToJson());
         }
     }
 }

@@ -48,10 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BsonDocumentTests.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Truck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MongoDb.Model\MongoDb.Model.csproj">
+      <Project>{11617ac4-688e-4452-83df-be8be530e6ab}</Project>
+      <Name>MongoDb.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

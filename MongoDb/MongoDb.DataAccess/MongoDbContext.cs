@@ -1,4 +1,4 @@
-﻿using MongoDB.Bson;
+﻿using MongoDb.Model;
 using MongoDB.Driver;
 
 namespace MongoDb.DataAccess
@@ -7,15 +7,15 @@ namespace MongoDb.DataAccess
     {
         public MongoDbContext()
         {
-            IMongoClient client = new MongoClient("mongodb://localhost");
-            MongoDatabase = client.GetDatabase("mydb");
+            IMongoClient client = new MongoClient("mongodb://admin:admin@ds036178.mongolab.com:36178/test");
+            MongoDatabase = client.GetDatabase("test");
         }
 
         public IMongoDatabase MongoDatabase { get; set; }
 
-        public IMongoCollection<BsonDocument> Users
+        public IMongoCollection<User> Users
         {
-            get { return MongoDatabase.GetCollection<BsonDocument>("users"); }
+            get { return MongoDatabase.GetCollection<User>("users"); }
         }
     }
 }
