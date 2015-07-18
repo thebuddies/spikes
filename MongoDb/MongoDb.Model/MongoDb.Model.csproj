@@ -7,7 +7,7 @@
     <ProjectGuid>{11617AC4-688E-4452-83DF-BE8BE530E6AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MongoDb.Model</RootNamespace>
+    <RootNamespace>MongoDb.Model.Base</RootNamespace>
     <AssemblyName>MongoDb.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -51,8 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IEntity.cs" />
-    <Compile Include="IUser.cs" />
+    <Compile Include="Base\EntityBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

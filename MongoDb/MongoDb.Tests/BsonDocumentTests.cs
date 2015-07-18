@@ -46,8 +46,6 @@ namespace MongoDb.Tests
                 Username = "pesho",
                 Age = 33
             };
-            user.Address.Add("My home address");
-            user.Address.Add("My work address");
 
             Console.WriteLine(user.ToJson());
         }

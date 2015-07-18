@@ -4,6 +4,7 @@ using System.Threading;
 using MongoDb.DataAccess;
 using MongoDb.Model;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
 
 namespace MongoDb.App
 {
@@ -15,7 +16,15 @@ namespace MongoDb.App
         {
             _ctx = new MongoDbContext();
 
-            InsertUsers(20);
+            var user = new User
+            {
+                Id = ObjectId.GenerateNewId().ToString(),
+                Username = "tester____"
+            };
+
+            _ctx.Users.InsertOneAsync(user);
+
+            //InsertUsers(5);
 
             Thread.Sleep(2000);
 
@@ -29,11 +38,11 @@ namespace MongoDb.App
             {
                 var user = new User
                 {
+                    //Id = ObjectId.GenerateNewId().ToString(),
                     Username = "user_" + i,
                     FirstName = "firstName_" + i,
                     LastName = "lastName" + i,
                     Age = 10 + i,
-                    Address = new List<string>() { "address_" + i }
                 };
 
                 users.Add(user);

@@ -1,19 +1,9 @@
-﻿using System.Collections.Generic;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDb.Model.Base;
 
 namespace MongoDb.Model
 {
-    public class User : IUser<ObjectId>
+    public class User : EntityBase<string>
     {
-        public User()
-        {
-            this.Address = new List<string>();
-        }
-
-        [BsonId]
-        public ObjectId Id { get; set; }
-
         public string Username { get; set; }
 
         public string FirstName { get; set; }
@@ -21,7 +11,5 @@ namespace MongoDb.Model
         public string LastName { get; set; }
 
         public int Age { get; set; }
-
-        public ICollection<string> Address { get; set; }
     }
 }

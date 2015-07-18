@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityMappings\Base\MongoDbClassMapperBase.cs" />
+    <Compile Include="EntityMappings\Base\EntityBaseMap.cs" />
+    <Compile Include="EntityMappings\UserMap.cs" />
     <Compile Include="MongoDbContext.cs" />
+    <Compile Include="MongoDbMappings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
