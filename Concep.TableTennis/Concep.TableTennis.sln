@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concep.TableTennis", "Concep.TableTennis\Concep.TableTennis.csproj", "{B30963AD-2B40-481F-90DA-75876EAF8154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concep.TableTennis.Domain", "Concep.TableTennis.Domain\Concep.TableTennis.Domain.csproj", "{664C95EA-6F3C-4B62-B92C-CDD30CCAEC20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concep.TableTennis.Infrastructure", "Concep.TableTennis.Infrastructure\Concep.TableTennis.Infrastructure.csproj", "{64690F93-7EEC-4493-8BEF-37242FF5825B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B30963AD-2B40-481F-90DA-75876EAF8154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30963AD-2B40-481F-90DA-75876EAF8154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30963AD-2B40-481F-90DA-75876EAF8154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30963AD-2B40-481F-90DA-75876EAF8154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664C95EA-6F3C-4B62-B92C-CDD30CCAEC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664C95EA-6F3C-4B62-B92C-CDD30CCAEC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664C95EA-6F3C-4B62-B92C-CDD30CCAEC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664C95EA-6F3C-4B62-B92C-CDD30CCAEC20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64690F93-7EEC-4493-8BEF-37242FF5825B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64690F93-7EEC-4493-8BEF-37242FF5825B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64690F93-7EEC-4493-8BEF-37242FF5825B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64690F93-7EEC-4493-8BEF-37242FF5825B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
